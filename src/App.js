@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './Dashboard';  // composant Dashboard
+import Checklist from './Checklist';  // composant Checklist
+import Formulaire from './Formulaire'; //  composant Formulaire
+import './App.css';  //  fichier CSS global
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        {/* Route pour la page Dashboard */}
+        <Route path="/" element={<Dashboard />} />
+        
+        {/* Route pour la page Checklist */}
+        <Route path="/checklist/:id" element={<Checklist />} />
+        
+        {/* Route pour le formulaire */}
+        <Route path="/formulaire" element={<Formulaire />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
+

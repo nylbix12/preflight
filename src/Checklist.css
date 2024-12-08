@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2e5c92;
+    color: white;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  /* Container */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Toolbar */
+  .toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .dashboard-btn {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Checklist Card */
+  .checklist-card {
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checklist-header {
+    margin-bottom: 20px;
+  }
+  
+  .checklist-title {
+    background-color: #ffd966;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .checklist-description {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Checklist Items */
+  .checklist-items {
+    margin-bottom: 20px;
+  }
+  
+  .checklist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checklist-item label {
+    margin-left: 10px;
+  }
+  
+  .checklist-remember {
+    margin-bottom: 20px;
+  }
+  
+  .remember-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .remember-notes {
+    width: 100%;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+  }
+  
+  /* Footer */
+  .checklist-footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Completed Tasks */
+  label.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  .checklist-title,
+.checklist-description,
+.task-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.task-input {
+  margin-left: 10px;
+}
+
+.checklist-title {
+  font-weight: bold;
+  background-color: #ffd966;
+}
+
+.checklist-description {
+  background-color: white;
+}

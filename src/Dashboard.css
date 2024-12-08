@@ -1,0 +1,180 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004a91;
+    color: white;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  /* Controls */
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .add-checklist-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .add-checklist-btn:hover {
+    background-color: #ddd;
+  }
+  
+  .new-checklist-btn {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new-checklist-btn:hover {
+    background-color: #e63946;
+  }
+  
+  /* Message */
+  .no-checklist-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  /* Checklist Container */
+  .checklist-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour desktop */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .checklist {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Checklist Header */
+  .checklist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    background-color: #ffd54f;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Status Badge */
+  .status-badge {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .badge-to-do {
+    background-color: #f44336;
+  }
+  
+  .badge-in-progress {
+    background-color: #ff9800;
+  }
+  
+  .badge-done {
+    background-color: #4caf50;
+  }
+  
+  /* Task Info */
+  .task-info {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  /* Actions */
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background-color: #004a91;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-btn:hover {
+    background-color: #003166;
+  }
+  
+  .delete-btn {
+    background-color: #ff4b5c;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e63946;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .checklist-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour tablettes */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .checklist-container {
+      grid-template-columns: 1fr; /* 1 colonne pour mobile */
+    }
+  }
+  
